@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="Welcome to Soni Courses" />
+    <meta name="keywords" content="Soni, Courses, Education" />
+    <meta name="author" content="Mr.Hosni" />
+    <meta property="og:title" content="Soni Courses | الرئيسية" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.sonicourses.com/" />
+    <meta property="og:image" content="https://example.com/images/main_image.jpg" />
+    <meta property="og:description" content="Welcome to Soni Courses. Start your learning journey today." />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@SoniCourses" />
+    <meta property="twitter:title" content="Soni Courses | الرئيسية" />
+    <meta property="twitter:description" content="Welcome to Soni Courses. Start your learning journey today." />
+    <meta property="twitter:image" content="https://example.com/images/main_image.jpg" />
+    <link rel="shortcut icon" href="../images/main_logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>SONI COURSES | الرئيسية</title>
+  </head>
+
+  <body>
+    <article itemscope itemtype="https://schema.org/Article"></article>
+    <div class="loading-overlay">
+      <img src="../images/logo_gif.gif" alt="Loading" class="loading-image" />
+    </div>
+    <!-- Navbar -->
+    <header class="header sticky-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 p-0">
+            <nav class="navbar navbar-expand-lg main-bg-color">
+              <div class="link-hover">
+                <a class="navbar-brand" href="../index.html">
+                  <img src="../images/main_logo.png" width="70" alt="Hi to Soni Courses" loading="lazy" />
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./allCourses.html">الدورات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile.html">دوراتي</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="./allPackges.html">الباقات</a>
+                  </li>
+                  <li class="nav-item dropdown mx-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="sectionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> الأقسام </a>
+                    <div class="dropdown-menu" aria-labelledby="sectionsDropdown">
+                      <a class="dropdown-item" href="#">تصميم</a>
+                      <a class="dropdown-item" href="#">موشن جرافيك</a>
+                      <a class="dropdown-item" href="#">الدورات المجانية</a>
+                      <a class="dropdown-item" href="#">صناعة المحتوى</a>
+                      <a class="dropdown-item" href="#">مونتاج</a>
+                      <a class="dropdown-item" href="#">الثري دي</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- logged in user -->
+              <div class="mr-auto ml-2">
+                <ul class="navbar-nav flex-dir p-0">
+                  <li class="nav-item">
+                    <a class="notification-link" href="./myCart.html">
+                      <img class="notification-icon" src="../images/icons/shopping-cart.svg" alt="" />
+                      <span class="notification" id="cart-counter" class="">1</span>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="notification-link" href="./favoriteCourses.html">
+                      <img class="notification-icon" src="../images/icons/heart.png" alt="" />
+                      <span class="notification" id="wishlist-counter" class="">1</span>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarUserDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="profile-icon" src="../images/icons/placeholder.png" loading="lazy" alt="profile picture" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarUserDropdown">
+                      <div class="text-white container direction text-start" style="text-align: start">
+                        <div class="row">
+                          <div class="col-12 d-flex align-items-center">
+                            <img class="profile-icon-inside ml-2" src="../images/icons/placeholder.png" loading="lazy" alt="profile picture" />
+                            <p style="font-size: 16px">User Name</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="./profile.html">الملف الشخصي</a>
+                      <a class="dropdown-item" href="./login.html">الخروج</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end logged in user -->
+              <button style="background-color: var(--light-gray-color)" class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarPopup">
+                <i class="fas fa-bars main-color"></i>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="modal fade" id="navbarPopup" tabindex="-1" role="dialog" aria-labelledby="navbarPopupLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header main-bg-color">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="text-white" aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="modal-title text-white" id="navbarPopupLabel">القائمه</h5>
+          </div>
+          <div class="modal-body main-bg-color">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="./allCourses.html" class="nav-link">الدورات</a>
+              </li>
+              <li class="nav-item">
+                <a href="./allPackges.html" class="nav-link">الباقات</a>
+              </li>
+              <li class="nav-item">
+                <a href="./profile.html" class="nav-link">دوراتي</a>
+              </li>
+              <li class="nav-item">
+                <a href="./allCourses.html" class="nav-link">الأقسام</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Main -->
+    <main>
+      <div class="row mr-0 ml-0 custom-padding">
+        <!-- vedio section -->
+        <div class="col-lg-8 p-0 d-flex">
+          <div class="basic-info mr-2 w-100">
+            <div style="padding: 55% 0 0 0; position: relative; width: 100%; height: 100%">
+              <iframe src="https://player.vimeo.com/video/813853126?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" title="lesson 45 - نصائح هامة جدا جدا" data-ready="true"></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- info section -->
+        <div class="col-lg-4 basic-info direction">
+          <div class="row text-white h-100">
+            <div class="col-lg-12 side-info-icons" style="display: flex; flex-direction: column; justify-content: space-between">
+              <div>
+                <h4 class="mb-4">ورشة عمل إنترو كيدز بوب</h4>
+                <div class="d-flex align-items-center">
+                  <img class="basic-info-img" src="../images/instructor.jpg" />
+                  <h6 class="mr-2">المحاضر: hosni abdelrahman</h6>
+                </div>
+                <h5 class="my-3">سجل بهذة الدورة واحصل علي :-</h5>
+                <p>
+                  <i class="fas fa-video"></i>
+                  11 عدد الدروس
+                </p>
+                <p>
+                  <i class="fas fa-tv"></i>
+                  01:31:10 ساعات من الفيديوهات
+                </p>
+                <p>
+                  <i class="fas fa-infinity"></i>
+                  وصول مدي الحياة
+                </p>
+                <p>
+                  <i class="fas fa-certificate"></i>
+                  شهادة إتمام الدورة
+                </p>
+              </div>
+
+              <div class="container mt-2">
+                <div class="row align-items-center">
+                  <div class="col-lg-8 col-sm-4 mb-3">
+                    <a href="" class="btn red-chip">إلتحاق بالدورة</a>
+                  </div>
+                  <div class="col-lg-8 col-sm-4 mb-3">
+                    <a href="" class="btn green-chip">بدء بالدورة</a>
+                  </div>
+                  <div class="col-lg-4 col-sm-2">
+                    <button class="btn second-bg-color rounded-circle text-white mb-3" id="opensharecard" data-toggle="modal" data-target="#myModal">
+                      <i class="fas fa-share"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 p-0">
+          <div class="my-tabs direction course-info text-white">
+            <ul class="nav nav-tabs p-0" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#details">تفاصيل الدورة </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#whatYouLearn">ماذ سوف تتعلم </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#requirments">المتطلبات </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#content">محتويات الدورة </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#ratings">التقييمات </a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="details" class="tab-pane active show">
+                <div class="break">
+                  <p>ورشة عمل انترو كيدز بوب</p>
+                  <p>ورشة عملية لعمل تطبيق انترو لقناة أطفال</p>
+                  <p>باستخدام برنامج الفوتوشوب في تصميم وتجهيز المشاهد</p>
+                  <p>واستخدام برنامج الافترافكتس لعمل التحريك</p>
+                  <p>ثم اضافة المؤثرات الصوتية وبعض الالمنتس</p>
+                  <p>ورشة مجانية بها الكثير من المعلومات المفيدة</p>
+                </div>
+              </div>
+
+              <div id="whatYouLearn" class="tab-pane fade">
+                <div class="mr-4">
+                  <!-- <h2> ماذا سوف تتعلم</h2> -->
+                  <div class="tl-item">
+                    <div class="tl-dot b-primary"></div>
+                    <div class="tl-content">
+                      <div class="">جهاز لا يقل عن 4 جيجا رام</div>
+                    </div>
+                  </div>
+                  <div class="tl-item">
+                    <div class="tl-dot b-primary"></div>
+                    <div class="tl-content">
+                      <div class="">جهاز لا يقل عن 4 جيجا رام</div>
+                    </div>
+                  </div>
+                  <div class="tl-item">
+                    <div class="tl-dot b-primary"></div>
+                    <div class="tl-content">
+                      <div class="">تحميل و تجهز البرامج الطلوبه لتحميل البرامج</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="requirments" class="tab-pane fade">
+                <div class="mr-4">
+                  <!-- <h2> المتطلبات :</h2> -->
+                  <div class="padding0">
+                    <div class="tl-item">
+                      <div class="tl-dot b-primary"></div>
+                      <div class="tl-content">
+                        <div class="">جهاز لا يقل عن 4 جيجا رام</div>
+                      </div>
+                    </div>
+                    <div class="tl-item">
+                      <div class="tl-dot b-primary"></div>
+                      <div class="tl-content">
+                        <div class="">جهاز لا يقل عن 4 جيجا رام</div>
+                      </div>
+                    </div>
+                    <div class="tl-item">
+                      <div class="tl-dot b-primary"></div>
+                      <div class="tl-content">
+                        <div class="">تحميل و تجهز البرامج الطلوبه لتحميل البرامج</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="practicalApplication" class="tab-pane fade">
+                <div class="mr-4">
+                  <div class="tl-item">
+                    <div class="tl-dot b-primary"></div>
+                    <div class="tl-content">
+                      <div class="">جهاز لا يقل عن 4 جيجا رام</div>
+                    </div>
+                  </div>
+                  <div class="tl-item">
+                    <div class="tl-dot b-primary"></div>
+                    <div class="tl-content">
+                      <div class="">جهاز لا يقل عن 4 جيجا رام</div>
+                    </div>
+                  </div>
+                  <div class="tl-item">
+                    <div class="tl-dot b-primary"></div>
+                    <div class="tl-content">
+                      <div class="">تحميل و تجهز البرامج الطلوبه لتحميل البرامج</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="content" class="tab-pane fade lesson-div-hieght">
+                <div class="lesson">
+                  <p data-toggle="collapse" data-target="#expandableContent" id="expandBtn">
+                    <span class="expand-icon ml-3"><i class="fas fa-angle-down"></i></span>
+                    <span class="collapse-icon ml-3"><i class="fas fa-angle-up"></i></span>
+                    تجهيز المشروع
+                  </p>
+                  <div class="px-4 py-2">
+                    <div id="expandableContent" class="collapse collapse-tab mt-3">
+                      <div class="d-flex justify-content-between px-2 mb-2">
+                        <div class="d-flex align-items-center">
+                          <i class="fab fa-youtube ml-2 light-gray-color"></i>
+                          <h6 class="m-0">تحريك المشاهد 1</h6>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="fas fa-lock mx-1 light-gray-color"></i>
+                          <i class="fas fa-link mx-1 light-gray-color"></i>
+                          <i class="fas mx-1 light-gray-color">&#xf1c6;</i>
+                          <i class="fas fa-file mx-1 light-gray-color"></i>
+                          <span>00:05:46</span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between px-2 mb-2">
+                        <div class="d-flex align-items-center">
+                          <i class="fab fa-youtube ml-2 light-gray-color"></i>
+                          <h6 class="m-0">تحريك المشاهد 1</h6>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <p class="lesson-note ml-2">شاهد الدرس</p>
+                          <i class="fas fa-lock-open mx-1 green-color"></i>
+                          <span>00:05:46</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- rating -->
+              <div id="ratings" class="tab-pane justify-content-start fade course-view">
+                <div class="direction course-reviews">
+                  <div>
+                    <div class="modal-body justify-content-end">
+                      <h4 class="mr-2">(4)</h4>
+                      <div class="star-rating-comment mb-3">
+                        <i class="md-star-comment fas fa-star-half active" data-value="0.5"></i>
+                        <i class="transform md-star-comment fas fa-star-half active" data-value="1"></i>
+                        <i class="md-star-comment fas fa-star-half active" data-value="1.5"></i>
+                        <i class="transform md-star-comment fas fa-star-half active" data-value="2"></i>
+                        <i class="md-star-comment fas fa-star-half active" data-value="2.5"></i>
+                        <i class="transform md-star-comment fas fa-star-half active" data-value="3"></i>
+                        <i class="md-star-comment fas fa-star-half active" data-value="3.5"></i>
+                        <i class="transform md-star-comment fas fa-star-half" data-value="4"></i>
+                        <i class="md-star-comment fas fa-star-half" data-value="4.5"></i>
+                        <i class="transform md-star-comment fas fa-star-half" data-value="5"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div dir="ltr" class="comment">
+                      <div class="d-flex align-items-center justify-content-end">
+                        <div class="star-rating-comment mr-2">
+                          <i class="sm-star-comment fas fa-star-half active" data-value="0.5"></i>
+                          <i class="transform sm-star-comment fas fa-star-half active" data-value="1"></i>
+                          <i class="sm-star-comment fas fa-star-half active" data-value="1.5"></i>
+                          <i class="transform sm-star-comment fas fa-star-half active" data-value="2"></i>
+                          <i class="sm-star-comment fas fa-star-half active" data-value="2.5"></i>
+                          <i class="transform sm-star-comment fas fa-star-half active" data-value="3"></i>
+                          <i class="sm-star-comment fas fa-star-half active" data-value="3.5"></i>
+                          <i class="transform sm-star-comment fas fa-star-half" data-value="4"></i>
+                          <i class="sm-star-comment fas fa-star-half" data-value="4.5"></i>
+                          <i class="transform sm-star-comment fas fa-star-half" data-value="5"></i>
+                        </div>
+                        <p class="pr-0 mt-0">Maher Alfreih</p>
+                        <img src="../images/icons/account.png" alt="" />
+                      </div>
+                      <div dir="rtl" class="mt-2">
+                        <h6>اداره ساعات شارك لا قسي اداره</h6>
+                      </div>
+                    </div>
+                    <div class="row p-0 m-0">
+                      <div class="col-12 p-0 m-0">
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <button class="btn red-chip">المزيد</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="myModal" style="display: none" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="coneryanro">
+              <!-- Modal Header -->
+              <div class="coneryanro-head">
+                <i class="fa fa-times ml-4" aria-hidden="true" class="close" data-dismiss="modal"></i>
+                <div class="w-100 text-center mr-4">
+                  <p style="font-size: 16px">شارك هذة الباقه</p>
+                </div>
+              </div>
+              <!-- Modal body -->
+              <div class="coneryanro-body">
+                <input class="coneryanro-input form-control" id="myInput" readonly value="https://www.sonicourses.com/bundle_details/8/باقة-الموشن-جرافيك" />
+                <button onclick="myFunction()" class="btn red-chip mt-2 px-3 px-lg-5">نسخ</button>
+              </div>
+              <ul class="navbar-nav coneryanro-list">
+                <li>
+                  <a href="" target="_blank"> <i class="fab fa-facebook icon-circle nav-item" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i class="fab fa-telegram-plane icon-circle nav-item" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i class="fab fa-twitter icon-circle nav-item" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mx-auto">
+              <div class="d-flex flex-column footer__contact-us">
+                <div class="footer-contact-us text-center text-md-left">
+                  <i class="fas fa-mobile-alt mr-2" aria-hidden="true"></i>
+                  <a href="tel://+201553618701">+201553618701</a>
+                </div>
+                <div class="footer-contact-us mt-2 text-center text-md-left">
+                  <i class="far fa-envelope mr-2" aria-hidden="true"></i>
+                  <a href="mailto://support@sonicourses.com">support@sonicourses.com</a>
+                </div>
+                <div class="d-flex mt-2 text-center justify-content-center justify-content-md-start">
+                  <a class="mr-2" target="_blank" href="https://www.youtube.com/@SoniDesigner/videos"><img class="social-icons" src="../images/icons/youtube.png" loading="lazy" alt="youtube channel" /></a>
+                  <a class="mx-2" target="_blank" href="https://www.facebook.com/soniidesigner/"><img class="social-icons" src="../images/icons/facebook.png" loading="lazy" alt="facebook page" /></a>
+                  <a class="mx-2" target="_blank" href="https://twitter.com/SoniDesigner "><img class="social-icons" src="../images/icons/twitter.png" loading="lazy" alt="twitter page" /></a>
+                  <a class="mx-2" target="_blank" href="https://www.instagram.com/soni_designer1717/"><img class="social-icons" src="../images/icons/instagram.png" loading="lazy" alt="instagram page" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 mx-auto p-0">
+              <ul class="footer__links mt-5 text-center p-0">
+                <li><a class="nav-link" href="https://www.sonicourses.com/home/help_center">مركز المساعدة</a></li>
+                <li><a class="nav-link" href="https://www.sonicourses.com/course_bundles">الباقات</a></li>
+                <li><a class="nav-link" href="https://www.sonicourses.com/home/courses">الدورات</a></li>
+                <li><a class="nav-link" href="https://www.sonicourses.com/home">الرئيسية</a></li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-end align-items-center justify-content-md-center custom-justify-sm-center col-12 col-md-6 col-lg-3 mx-auto link-hover">
+              <a class="" href="#">
+                <img src="../images/main_logo.png" width="70" alt="Hi to Soni Courses" loading="lazy" alt="wlecom to soni corses" />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="credit text-center">
+                <a href="https://www.sonicourses.com/home" class="text-uppercase font-italic nav-link-no-ma">Soni Courses</a>
+                جميع الحقوق محفوظة
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+    <!-- End Main -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../script/sharePopupScript.js"></script>
+    <script src="../script/courseLessonsScript.js"></script>
+  </body>
+</html>

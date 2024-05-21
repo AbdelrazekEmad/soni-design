@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="Welcome to Soni Courses" />
+    <meta name="keywords" content="Soni, Courses, Education" />
+    <meta name="author" content="Mr.Hosni" />
+    <meta property="og:title" content="Soni Courses | بيانات الفتوره" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.sonicourses.com/" />
+    <meta property="og:image" content="https://example.com/images/main_image.jpg" />
+    <meta property="og:description" content="Welcome to Soni Courses. Start your learning journey today." />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@SoniCourses" />
+    <meta property="twitter:title" content="Soni Courses | بيانات الفتوره" />
+    <meta property="twitter:description" content="Welcome to Soni Courses. Start your learning journey today." />
+    <meta property="twitter:image" content="https://example.com/images/main_image.jpg" />
+    <link rel="shortcut icon" href="../images/main_logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.6/b-2.4.1/b-html5-2.4.1/b-print-2.4.1/fh-3.4.0/r-2.5.0/sc-2.2.0/datatables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>SONI COURSES | بيانات الفتوره</title>
+  </head>
+
+  <body>
+    <article itemscope itemtype="https://schema.org/Article"></article>
+    <div class="loading-overlay">
+      <img src="../images/logo_gif.gif" alt="Loading" class="loading-image" />
+    </div>
+    <!-- Navbar -->
+    <header class="header sticky-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 p-0">
+            <nav class="navbar navbar-expand-lg main-bg-color">
+              <!-- Filter -->
+              <div class="side-menu" id="menu">
+                <div class="container">
+                  <div class="row">
+                    <div class="cols-2">
+                      <h5>فلتر</h5>
+                    </div>
+                    <div class="cols-10 mr-auto">
+                      <button class="btn fas fa-times close-button text-white"></button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  <label for="star-rating">التقيمات:</label>
+                  <select style="color: gold" class="form-control" id="star-rating">
+                    <option>&#9733;</option>
+                    <option>&#9733;&#9733;</option>
+                    <option>&#9733;&#9733;&#9733;</option>
+                    <option>&#9733;&#9733;&#9733;&#9733;</option>
+                    <option>&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                  </select>
+                </div>
+                <hr />
+                <div class="form-group">
+                  <label>فئة:</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category1" />
+                    <label class="form-check-label" for="category1"> فئة 1 </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category2" />
+                    <label class="form-check-label" for="category2"> فئة 2 </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category3" />
+                    <label class="form-check-label" for="category3"> فئة 3 </label>
+                  </div>
+                </div>
+                <hr />
+                <div class="form-group">
+                  <label>السعر:</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="price1" />
+                    <label class="form-check-label" for="price1"> مجاني </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="price2" />
+                    <label class="form-check-label" for="price2"> مدفوع </label>
+                  </div>
+                </div>
+                <hr />
+                <div class="form-group">
+                  <label>الوقت:</label><br />
+                  <label><input type="checkbox" id="filter0-30" />0-30 min</label><br />
+                  <label><input type="checkbox" id="filter30-1h" />30 min - 1h</label><br />
+                  <label><input type="checkbox" id="filter1h-1:30h" />1h - 1:30h</label><br />
+                  <label><input type="checkbox" id="filter2h-5h" />2h - 5h</label><br />
+                </div>
+                <hr />
+                <div class="form-group">
+                  <label>عرض التخفيضات:</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sale" />
+                    <label class="form-check-label" for="sale"> التخفيضات </label>
+                  </div>
+                </div>
+                <hr />
+                <div class="form-group">
+                  <label>المستوي:</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category1" />
+                    <label class="form-check-label" for="category1"> مبتدئ </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category2" />
+                    <label class="form-check-label" for="category2"> متوسط </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category3" />
+                    <label class="form-check-label" for="category3"> متقدم </label>
+                  </div>
+                </div>
+                <hr />
+                <button class="btn red-bg-color text-white" id="submit-btn">تاكيد</button>
+              </div>
+              <!-- End Filter -->
+              <div class="link-hover">
+                <a class="navbar-brand" href="../index.html">
+                  <img src="../images/main_logo.png" width="70" alt="Hi to Soni Courses" loading="lazy" />
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./allCourses.html">الدورات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile.html">دوراتي</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="./allPackges.html">الباقات</a>
+                  </li>
+                  <li class="nav-item dropdown mx-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="sectionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> الأقسام </a>
+                    <div class="dropdown-menu" aria-labelledby="sectionsDropdown">
+                      <a class="dropdown-item" href="#">تصميم</a>
+                      <a class="dropdown-item" href="#">موشن جرافيك</a>
+                      <a class="dropdown-item" href="#">الدورات المجانية</a>
+                      <a class="dropdown-item" href="#">صناعة المحتوى</a>
+                      <a class="dropdown-item" href="#">مونتاج</a>
+                      <a class="dropdown-item" href="#">الثري دي</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- logged in user -->
+              <div class="mr-auto ml-2">
+                <ul class="navbar-nav flex-dir p-0">
+                  <li class="nav-item">
+                    <a class="notification-link" href="./myCart.html">
+                      <img class="notification-icon" src="../images/icons/shopping-cart.svg" alt="" />
+                      <span class="notification" id="cart-counter" class="">1</span>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="notification-link" href="./favoriteCourses.html">
+                      <img class="notification-icon" src="../images/icons/heart.png" alt="" />
+                      <span class="notification" id="wishlist-counter" class="">1</span>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarUserDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="profile-icon" src="../images/icons/placeholder.png" loading="lazy" alt="profile picture" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarUserDropdown">
+                      <div class="text-white container direction text-start" style="text-align: start">
+                        <div class="row">
+                          <div class="col-12 d-flex align-items-center">
+                            <img class="profile-icon-inside ml-2" src="../images/icons/placeholder.png" loading="lazy" alt="profile picture" />
+                            <p style="font-size: 16px">User Name</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="./profile.html">الملف الشخصي</a>
+                      <a class="dropdown-item" href="./login.html">الخروج</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end logged in user -->
+              <button style="background-color: var(--second-color)" class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarPopup">
+                <i class="fas fa-bars main-color"></i>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="modal fade" id="navbarPopup" tabindex="-1" role="dialog" aria-labelledby="navbarPopupLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header main-bg-color">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="text-white" aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="modal-title text-white" id="navbarPopupLabel">القائمه</h5>
+          </div>
+          <div class="modal-body main-bg-color">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="./allCourses.html" class="nav-link">الدورات</a>
+              </li>
+              <li class="nav-item">
+                <a href="./allPackges.html" class="nav-link">الباقات</a>
+              </li>
+              <li class="nav-item">
+                <a href="./profile.html" class="nav-link">دوراتي</a>
+              </li>
+              <li class="nav-item">
+                <a href="./allCourses.html" class="nav-link">الأقسام</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Main -->
+    <main>
+      <div class="direction container text-white py-4 my-3 total-ivoice-container mx-auto">
+        <div class="row">
+          <div class="col-6">
+            <h4>رقم الطلب : #132-345-45</h4>
+            <h6>تاريخ الطلب : 13-4-2022</h6>
+            <h6>تاريخ الاستلام : 15-4-2022</h6>
+          </div>
+          <div class="col-6" style="text-align: end">
+            <h4>Sonicourses - online Course Platfourm</h4>
+            <h6>123 main st anytown, USA 123123</h6>
+            <h6>sonicourse-support@email</h6>
+            <h6>012301230123</h6>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-6">
+            <h4>تفاصيل الفاتوره:</h4>
+            <h6 class="d-flex">حاله الطلب: <span class="approved-chip mr-2 w-auto">---</span></h6>
+            <h6>اجمالي الفتوره: 200$</h6>
+            <h6>كود الكوبون: soni-course</h6>
+            <h6>خصم الموقع: 50$</h6>
+          </div>
+          <div class="col-6 text-center">
+            <h4>الفاتوره الي:</h4>
+            <h6>user@user.com</h6>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <h4>محتويات الطلب:</h4>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="total-invoice-section">
+              <table id="example6" class="display total-ivoice-table">
+                <thead>
+                  <tr>
+                    <th style="text-align: right">الرقم</th>
+                    <th style="text-align: right">صوره</th>
+                    <th style="text-align: right">الاسم</th>
+                    <th style="text-align: right">النوع</th>
+                    <th style="text-align: right">العدد</th>
+                    <th style="text-align: right">السعر</th>
+                    <th style="text-align: right">الكبون</th>
+                    <th style="text-align: right">الخصم</th>
+                    <th style="text-align: right">السعر النهائي</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <th>---</th>
+                    <th>تصميم</th>
+                    <th>دوره</th>
+                    <th>12</th>
+                    <th>200$</th>
+                    <th>50$</th>
+                    <th>100$</th>
+                    <th>50$</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 pl-5" style="text-align: end">
+            <h5>السعر الاساسي : $123</h5>
+            <h5>خصم الكوبون : $123</h5>
+            <h5>خصم الموقع : $123</h5>
+            <h5>السعر الاجمالي : $123</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mx-auto">
+              <div class="d-flex flex-column footer__contact-us">
+                <div class="footer-contact-us text-center text-md-left">
+                  <i class="fas fa-mobile-alt mr-2" aria-hidden="true"></i>
+                  <a href="tel://+201553618701">+201553618701</a>
+                </div>
+                <div class="footer-contact-us mt-2 text-center text-md-left">
+                  <i class="far fa-envelope mr-2" aria-hidden="true"></i>
+                  <a href="mailto://support@sonicourses.com">support@sonicourses.com</a>
+                </div>
+                <div class="d-flex mt-2 text-center justify-content-center justify-content-md-start">
+                  <a class="mr-2" target="_blank" href="https://www.youtube.com/@SoniDesigner/videos"><img class="social-icons" src="../images/icons/youtube.png" loading="lazy" alt="youtube channel" /></a>
+                  <a class="mx-2" target="_blank" href="https://www.facebook.com/soniidesigner/"><img class="social-icons" src="../images/icons/facebook.png" loading="lazy" alt="facebook page" /></a>
+                  <a class="mx-2" target="_blank" href="https://twitter.com/SoniDesigner "><img class="social-icons" src="../images/icons/twitter.png" loading="lazy" alt="twitter page" /></a>
+                  <a class="mx-2" target="_blank" href="https://www.instagram.com/soni_designer1717/"><img class="social-icons" src="../images/icons/instagram.png" loading="lazy" alt="instagram page" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 mx-auto p-0">
+              <ul class="footer__links mt-5 text-center p-0">
+                <li><a class="nav-link" href="https://www.sonicourses.com/home/help_center">مركز المساعدة</a></li>
+                <li><a class="nav-link" href="https://www.sonicourses.com/course_bundles">الباقات</a></li>
+                <li><a class="nav-link" href="https://www.sonicourses.com/home/courses">الدورات</a></li>
+                <li><a class="nav-link" href="https://www.sonicourses.com/home">الرئيسية</a></li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-end align-items-center justify-content-md-center custom-justify-sm-center col-12 col-md-6 col-lg-3 mx-auto link-hover">
+              <a class="" href="#">
+                <img src="../images/main_logo.png" width="70" alt="Hi to Soni Courses" loading="lazy" alt="wlecom to soni corses" />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="credit text-center">
+                <a href="https://www.sonicourses.com/home" class="text-uppercase font-italic nav-link-no-ma">Soni Courses</a>
+                جميع الحقوق محفوظة
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+    <!-- End Main -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

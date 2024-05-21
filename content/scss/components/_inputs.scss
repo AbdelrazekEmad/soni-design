@@ -1,0 +1,46 @@
+.form-group {
+  margin-bottom: 0.5rem;
+
+  label {
+    color: $white-color;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    background-color: rgba(90, 90, 90, 0.44); // #5a5a5a70
+    border: 0;
+    color: $white-color;
+    border-radius: 12px;
+
+    &:focus {
+      color: #495057;
+      background-color: $white-color;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder,
+    &::placeholder {
+      font-size: 12px;
+      color: #6c757d;
+    }
+  }
+
+  .toggle-password,
+  .toggle-confirm-password {
+    position: absolute;
+    top: 50%;
+    right: 90%;
+    transform: translateY(-50%);
+    color: #888888;
+    cursor: pointer;
+
+    &.toggle-confirm-password {
+      color: #888888;
+    }
+  }
+}

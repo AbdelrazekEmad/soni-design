@@ -1,0 +1,43 @@
+.main__btn {
+  display: block;
+  width: fit-content;
+  color: $white-color;
+  background-color: $red-color;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 0.75rem;
+  border: 0;
+
+  &:hover {
+    background-color: #bd0245;
+  }
+
+  &.center {
+    margin-inline: auto;
+  }
+}
+
+.close__btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white-color;
+  width: 20px;
+  border: 0;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $red-color;
+  transition: background-color 0.3s ease-in-out;
+
+  i {
+    font-size: 12px;
+  }
+
+  &:hover {
+    background-color: #bd0245;
+  }
+}

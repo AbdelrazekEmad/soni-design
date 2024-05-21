@@ -1,0 +1,20 @@
+.alert-banner {
+  background-color: $red-color;
+  font-size: 12px;
+  color: $white-color;
+  padding: 0.75rem;
+  padding-inline-end: 1rem;
+  position: relative;
+
+  a {
+    color: $dark-color;
+    font-weight: 700;
+  }
+
+  .close__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+  }
+}

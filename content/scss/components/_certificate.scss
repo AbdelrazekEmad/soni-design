@@ -1,0 +1,22 @@
+.certificate-photo {
+  width: 100%;
+}
+
+.certificate-section::after {
+  content: "";
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.certificate-icon {
+  width: 40px;
+}

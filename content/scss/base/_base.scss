@@ -1,0 +1,22 @@
+.thin-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $red-color;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #555;
+  }
+}
+
+.error {
+  display: block;
+  font-size: 12px;
+  color: red;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,67 @@
+.filter-icon {
+  background-color: $red-color;
+  color: $white-color;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($red-color, 0.8);
+  }
+}
+
+.filter-group {
+  margin-block: 1rem;
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    .fa-star {
+      font-size: 0.75rem;
+      color: #ccc;
+
+      &.fill {
+        color: gold;
+      }
+    }
+  }
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #8f8f8f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 0.75rem;
+    display: none;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &:has(input[type="checkbox"]:checked)::after,
+  &:has(input[type="radio"]:checked)::after {
+    display: block;
+  }
+}

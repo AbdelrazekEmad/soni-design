@@ -1,0 +1,82 @@
+.checkout {
+  color: white;
+  background-color: #5a5a5a70;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.checkout__input {
+  position: relative;
+}
+
+.checkout__input input {
+  padding-left: 100px;
+}
+
+.checkout__input .main__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.checkout__total .current-price {
+  color: $red-color;
+}
+
+.checkout__total .old-price {
+  color: gray;
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+.checkout__type {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 4px 8px;
+  margin-bottom: 0.5rem;
+  border: 2px solid #727373;
+  font-weight: 700;
+}
+
+.checkout__type.whatsapp {
+  border-color: #59ffc285;
+}
+
+.checkout__type.whatsapp p {
+  color: #59ffc285;
+}
+
+.checkout__type p {
+  color: #727373;
+  font-size: 12px;
+  margin: 0;
+}
+
+.checkout__type input[type="radio"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkout__type.has-radio-checked {
+  background-color: $red-color;
+  border-color: $red-color;
+}
+
+.checkout__type.has-radio-checked p {
+  color: $white-color;
+}
+
+.checkout__type img {
+  width: 50px;
+  height: 25px;
+  object-fit: contain;
+}

@@ -1,0 +1,31 @@
+.main-breadcrumb {
+  color: $white-color;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: $red-color;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .breadcrumb .breadcrumb-item a {
+    color: $white-color;
+  }
+
+  .breadcrumb .breadcrumb-item.active {
+    color: $red-color;
+  }
+
+  .breadcrumb .breadcrumb-item:not(:first-child)::before {
+    content: "\f104" !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    color: $white-color;
+  }
+}
