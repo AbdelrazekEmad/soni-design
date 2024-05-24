@@ -16,6 +16,9 @@
     width: 100%;
     max-width: 450px;
     margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   &__remember {
