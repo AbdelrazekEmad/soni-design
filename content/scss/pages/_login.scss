@@ -1,0 +1,53 @@
+.login {
+  max-width: 800px;
+  background-color: $darker-color;
+  margin-inline: auto;
+  border-radius: 1.5rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .main__heading {
+    margin-inline: auto;
+  }
+
+  .login-width {
+    width: 100%;
+    max-width: 450px;
+    margin-inline: auto;
+  }
+
+  &__remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    label {
+      color: $white-color;
+      cursor: pointer;
+    }
+  }
+
+  &__with {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: $white-color;
+
+    a {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $red-color;
+      color: $white-color;
+      font-size: 0.75rem;
+    }
+  }
+}

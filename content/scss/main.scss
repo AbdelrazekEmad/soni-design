@@ -21,8 +21,13 @@
 @import "./components/products";
 @import "./components/certificate";
 @import "./components/filter";
+@import "./components/modal";
+@import "./components/custon-checkbox";
 
 // pages
 @import "./pages/profile";
 @import "./pages/cart";
 @import "./pages/checkout";
+@import "./pages/package-details";
+@import "./pages/help-center";
+@import "./pages/login";

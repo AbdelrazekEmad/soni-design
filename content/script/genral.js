@@ -1,9 +1,14 @@
-// Loader
-window.addEventListener("load", function () {
+$(document).ready(function () {
+  // Loader
   var loadingOverlay = document.querySelector(".loading-overlay");
   setTimeout(function () {
     loadingOverlay.remove();
-  }, 2000);
+  }, 1500);
+
+  //bannar delete
+  $(".alert-banner .close__btn").click(function () {
+    $(".alert-banner").hide();
+  });
 });
 
 // Toggle dropdown on click

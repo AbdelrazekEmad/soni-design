@@ -73,81 +73,6 @@
   transition: transform 0.3s ease;
 }
 
-.icon-circle {
-  background-color: white;
-  color: var(--first-color);
-  border-radius: 50px;
-  height: 25px;
-  width: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 15px;
-}
-
-.icon-circle:hover {
-  background-color: var(--third-color);
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-/* login background */
-.login-bg {
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  min-height: calc(100vh - 90px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  direction: rtl;
-}
-
-.login-bg::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  opacity: 0.8;
-}
-
-/* login form */
-.underline {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 2px;
-}
-
-.underline::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 5px;
-  background-color: var(--third-color);
-  transition: width 0.3s ease;
-}
-
-.underline:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-.hint {
-  margin: 10px;
-  font-size: 14px;
-  color: green;
-}
-
-.hint.error {
-  color: red;
-}
-
 /* filter */
 .side-menu {
   position: fixed;
@@ -228,47 +153,6 @@
   transition: all 0.6s ease;
 }
 
-.coneryanro {
-  background-color: #27282b;
-  color: white;
-  border-radius: 5px;
-  pointer-events: auto;
-}
-
-.coneryanro-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-  padding: 10px;
-}
-
-.coneryanro-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.coneryanro-input {
-  font-size: 17px !important;
-  text-align: center;
-  background-color: transparent;
-  color: #dc3545;
-  border: 1px solid #777;
-  font-weight: bold;
-  margin-bottom: 2px;
-}
-
-.coneryanro-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  padding-bottom: 15px;
-  margin-left: 12px;
-}
-
 .difficulty-overlay {
   position: absolute;
   top: 10px;
@@ -324,46 +208,6 @@
   background-color: var(--third-color);
   color: var(--white-color);
 }
-
-/* help Center */
-.help-center .btn-light {
-  margin-bottom: 20px;
-  color: #ffff;
-  border: 0;
-  background-color: #27282b;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 150px;
-}
-
-.help-center .btn-light span {
-  font-size: 13px;
-  padding: 20px;
-}
-
-.btn-light:hover {
-  background-color: #494a4d;
-  cursor: pointer;
-}
-
-.vedio-modal {
-  background-color: #27282b;
-  opacity: 100;
-}
-
-.vedio-header {
-  margin: 0 auto;
-  border-bottom: 0;
-}
-
-.video-frame {
-  height: 399px;
-  width: 100%;
-}
-
-/* cart page */
 
 /* checkot page */
 .coupon-input {

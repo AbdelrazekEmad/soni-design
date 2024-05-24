@@ -43,8 +43,8 @@
   }
 
   &__label {
-    font-size: 10px;
-    padding: 4px 8px;
+    font-size: 12px;
+    padding: 6px 12px;
     border-radius: 4rem;
     color: $white-color;
     position: absolute;
@@ -53,6 +53,11 @@
 
     &--free {
       background-color: $green-color;
+      right: 10px;
+    }
+
+    &--offer {
+      background-color: $red-color;
       right: 10px;
     }
 
@@ -158,7 +163,7 @@
     transition: all 0.3s ease-in-out;
 
     span {
-      font-size: 24px;
+      font-size: 20px;
       text-align: center;
       width: 40%;
     }

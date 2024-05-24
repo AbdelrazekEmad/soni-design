@@ -1,0 +1,47 @@
+.main-modal {
+  .modal-content {
+    border-radius: 1.5rem;
+    background-color: $darker-color;
+    color: $white-color;
+    padding: 2rem;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  &__title {
+    width: fit-content;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid $red-color;
+    margin-bottom: 1.5rem;
+  }
+
+  .close__btn {
+    top: 5%;
+    left: 3%;
+  }
+}
+
+.copy-modal {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+  }
+
+  &__icon {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $red-color;
+    }
+  }
+}

@@ -3,10 +3,10 @@
   width: fit-content;
   color: $white-color;
   background-color: $red-color;
-  border-radius: 8px;
-  padding: 8px 16px;
+  border-radius: 10rem;
+  padding: 6px 24px;
   transition: background-color 0.3s ease-in-out;
-  font-size: 0.75rem;
+  font-size: 1rem;
   border: 0;
 
   &:hover {
@@ -15,6 +15,25 @@
 
   &.center {
     margin-inline: auto;
+  }
+
+  &__price {
+    .old {
+      color: rgba($white-color, 0.5);
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) rotate(90deg);
+        transform: translate(-50%) rotate(340deg);
+        left: 50%;
+        background-color: rgba($white-color, 0.5);
+      }
+    }
   }
 }
 
@@ -32,6 +51,7 @@
   border-radius: 50%;
   background-color: $red-color;
   transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
 
   i {
     font-size: 12px;
@@ -39,5 +59,23 @@
 
   &:hover {
     background-color: #bd0245;
+  }
+}
+
+.share__btn {
+  background-color: $dark-color;
+  color: $white-color;
+  border-radius: 50%;
+  width: 55px;
+  height: 45px;
+  border-radius: 5rem;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $red-color;
   }
 }

@@ -47,4 +47,9 @@ main {
     min-height: unset;
     padding-block: unset;
   }
+
+  &:has(.login) {
+    justify-content: center;
+    padding-block: 3rem;
+  }
 }
