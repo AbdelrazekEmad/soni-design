@@ -1,0 +1,136 @@
+.course-details {
+  &__intro {
+    background-color: $gray-color;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    color: $white-color;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  &__instructor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h5 {
+      font-size: 0.75rem;
+      color: $white-color;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-size: 1rem;
+      color: $white-color;
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__feature {
+    font-size: 14px;
+    flex: 1 1 calc(50% - 16px);
+    box-sizing: border-box;
+    color: $white-color;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .share__btn {
+    background-color: $gray-color;
+
+    &:hover {
+      background-color: $red-color;
+    }
+  }
+}
+
+.course-data {
+  background: linear-gradient(1.03deg, rgba(44, 40, 40, 0) -10.1%, #393434 94.9%);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  &__tabs {
+    justify-content: space-between;
+
+    .nav-link {
+      color: $white-color;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+
+      &.active {
+        background-color: transparent;
+        border-bottom: 3px solid $red-color;
+        border-radius: 0;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 1rem;
+    color: $white-color;
+  }
+}
+
+.rate-list {
+  max-height: 450px;
+  overflow-y: scroll;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+
+  &__item {
+    background-color: $darker-color;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__commenter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &__data {
+      .rate {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  &__comment {
+    margin-top: -1rem;
+    padding-right: 25px;
+    margin-right: 25px;
+    border-right: 2px solid $gray-color;
+    padding-top: 1.5rem;
+  }
+}

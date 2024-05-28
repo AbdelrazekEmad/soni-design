@@ -71,6 +71,21 @@
   color: #ef0055;
 }
 
+.rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  font-size: 1.25rem;
+}
+.rate .fa-solid.fa-star,
+.rate .fa-regular.fa-star-half-stroke {
+  color: #ffb800;
+}
+
 body {
   background-color: #252121;
   font-family: "Cairo", sans-serif;
@@ -1169,6 +1184,50 @@ body:has(.loading-overlay) {
   display: flex;
 }
 
+.tl-item {
+  border-radius: 3px;
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+}
+.tl-item > * {
+  padding: 10px;
+}
+.tl-item:last-child .tl-dot:after {
+  display: none;
+}
+
+.tl-dot {
+  position: relative;
+  border-color: rgba(160, 175, 185, 0.15);
+  border-color: #ef0055;
+}
+.tl-dot:after, .tl-dot:before {
+  content: "";
+  position: absolute;
+  background-color: #ef0055;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.tl-dot:after {
+  width: 0;
+  height: auto;
+  top: 25px;
+  bottom: -15px;
+  border-left: 2px solid #ef0055;
+  border-radius: 0;
+}
+
+.tl-content p:last-child {
+  margin-bottom: 0;
+}
+
 .profile .nav-pills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1688,4 +1747,141 @@ body:has(.loading-overlay) {
   font-size: 0.75rem;
 }
 
+.course-details__intro {
+  background-color: #393434;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.course-details__title {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.course-details__instructor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.course-details__instructor img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.course-details__instructor h5 {
+  font-size: 0.75rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 300;
+}
+.course-details__instructor h4 {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+}
+.course-details__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+.course-details__feature {
+  font-size: 14px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(50% - 16px);
+          flex: 1 1 calc(50% - 16px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+.course-details .share__btn {
+  background-color: #393434;
+}
+.course-details .share__btn:hover {
+  background-color: #ef0055;
+}
+
+.course-data {
+  background: linear-gradient(1.03deg, rgba(44, 40, 40, 0) -10.1%, #393434 94.9%);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.course-data__tabs {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.course-data__tabs .nav-link {
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+}
+.course-data__tabs .nav-link.active {
+  background-color: transparent;
+  border-bottom: 3px solid #ef0055;
+  border-radius: 0;
+}
+.course-data__content {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.rate-list {
+  max-height: 450px;
+  overflow-y: scroll;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+.rate-list__item {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+.rate-list__commenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.rate-list__commenter img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rate-list__commenter__data .rate {
+  font-size: 0.75rem;
+}
+.rate-list__comment {
+  margin-top: -1rem;
+  padding-right: 25px;
+  margin-right: 25px;
+  border-right: 2px solid #393434;
+  padding-top: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */

@@ -32,3 +32,15 @@
 .text-red {
   color: $red-color;
 }
+
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.25rem;
+
+  .fa-solid.fa-star,
+  .fa-regular.fa-star-half-stroke {
+    color: #ffb800;
+  }
+}
